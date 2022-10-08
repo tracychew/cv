@@ -1,235 +1,56 @@
-<!--
-We started making a standard HTML template (boiler plate code)
-by typing HTML and hitting enter
-This works because of the emmet plugin
-Below is DOCTYPE HTML 5, previous versions had something much longer
-To see example, type html:4t, and enter.
-Emmet will provide boiler plate code for this
-https://docs.emmet.io/cheat-sheet/
--->
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tracy Chew</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top-container">
+      <img class="top-cloud" src="css/images/cloud.png" alt="cloud-img">
+      <h1>I'm Tracy</h1>
+        <h2>a <span class="bio">bio</span>informatician.</h2>
+      <img class="bottom-cloud" src="css/images/cloud.png" alt="cloud-img">
+      <img src="css/images/mountain.png" alt="mountain-img">
+    </div>
+    <div class="middle-container">
+      <div class="profile">
+        <img class="tracy-pic" src="https://workflowhub.eu/assets/avatar-images/79-120x120.png" alt="tracy-pic">
+        <h2>Hello.</h2>
+        <p>I am a bioinformatician that ❤️'s fitness, animals and eating.</p>
+      </div>
+    <hr>
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="bioinformatics-gif" src="https://media3.giphy.com/media/yT7FNAnB5gqBWspkgZ/200w.webp?cid=ecf05e47kijnano6hm2lrchiiw4gy4yaizg29kjnsyebm0t7&rid=200w.webp&ct=s" alt="bioinformatics-gif">
+          <h3>Bioinformatics = Biology + Informatics</h3>
+          <p>I started learning to code in my PhD (canine genomics). I have since worked as a bioinformatician for over 5 years and have applied the technical skills that I have learnt throughout to a answer a range of biological research questions.</p>
+        </div>
+        <div class="skill-row">
+          <img class="pole-icon" src="https://cdn-icons-png.flaticon.com/512/2566/2566305.png" alt="pole-icon">
+          <h3>I like to climb</h3>
+          <p>Outside of work, I spend most of my time learning pole tricks. I also enjoy bouldering with friends.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3></h3>
+        <p>Especially if you also love bioinformatics, fitness, animals or eating.</p>
+        <a class="btn" href="mailto:tracytrace_c@hotmail.com">CONTACT ME</a>
+      </div>
+    </div>
 
-<head>
-  <!-- meta tags tell the website how to display the website
-    other tags = description (check mdn docs)
-    metadata associated with doc. charset set to UTF8
-    Encodings are specialised for different languages
-    You can google unicode-table.com to see all Unicode characters included
-    It includes all international characters and even emojis
-    Therefore you should always use utf-8!
-    -->
-  <meta charset="utf-8">
-  <title>Dr. Tracy Chew 👋</title>
-</head>
 
-<body>
-  <!-- atom's beautify will automatically indent your code -->
-  <table cellspacing="20">
-    <tr>
-      <td>
-        <img src="https://www.sydney.edu.au/dam/corporate/images/research/facilities/sydney-informatics-hub/our-staff/tracy-chew.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg" width="250" height="250" alt="Tracy's profile picture">
-      </td>
-      <td>
-        <h1>Dr. Tracy Chew 👋</h1>
-        <p><em><strong>
-              <h2>Bioinformatics Group Lead</h2>
-            </strong><br />
-            Sydney Informatics Hub, Core Research Facilities<br />
-            University of Sydney</em></p>
-      </td>
-    </tr>
-  </table>
-  <!--src can also be a local copy of the image file. If you take it locally, it crops it into a circle -->
-  <!-- there are many different attributes to change how the image appears -->
-  <hr />
-  <p>
-    I am a bioinformatician who loves animals, enjoys fitness (bouldering, pole, running), playing board games and good food.
-  </p>
-  <hr />
-  <h2><strong>Experience</strong></h2>
-  <h3>Bioinformatics Group Lead, University of Sydney</h3>
-  <h4>DEC 2020 - PRESENT</h4>
-  <ul>
-    <li>Managing a team of 3 senior bioinformaticians to deliver high quality data analytics
-      and research support services
-    </li>
-    <li>
-      Leading a national bioinformatics platforms project known as the “Bring Your Own Data – Command Line Interface”
-      Expansion Project with the Australian BioCommons and national partners
-    </li>
-    <li>
-      Performing data analytics for a variety of research groups, spanning domains including prostate cancer, COVID-19, oral health and canine disease
-    </li>
-    <li>
-      Supporting researchers with the adoption of new technologies, predominantly through training
-      in both webinar and workshop formats
-    </li>
-    <li>
-      Contributing to a positive, supportive and open source community, for example, by participating in hacky hours and cross-skilling sessions.
-    </li>
-  </ul>
-
-  <h3>Senior Research Bioinformatics Technical Officer, University of Sydney</h3>
-  <h4>SEP 2017 - DEC 2020</h4>
-  <ul>
-    <li>
-      Developed bioinformatics workflows that process and analyse terabytes of ‘omics
-      data on HPC (see GitHub repository)
-    </li>
-    <li>
-      Performed data analytics for research projects and researchers. Projects include a
-      range of sequencing technologies, clinical datasets and public datasets to answer a
-      range of research questions from human health, animal conservation, agriculture and
-      evolutionary biology
-    </li>
-    <li>
-      Consulted with a range of researchers including clinicians, professors, doctors,
-      researchers, and higher degree by research students
-    </li>
-    <li>
-      Built bioinformatics capacity within the University by developing 12 training courses
-      and organising social events. Events include monthly Hacky Hours, Data Bonanzas and
-      the Accelerated Computing for Innovation conference
-    </li>
-  </ul>
-
-  <h3>Demonstrator, University of Sydney</h3>
-  <h4>2015 - 2017</h4>
-  <ul>
-    <li>
-      Computer and laboratory practicals for “Animal Genetics” and “Agricultural Chemistry”
-    </li>
-    <li>
-      Developed course module “Gene Therapy and Genetic Engineering”, 2015
-    </li>
-  </ul>
-  <h3>Bioinformatics Training Facilitator, University of Sydney</h3>
-  <h4>2015 - 2016</h4>
-  <ul>
-    <li>Introduction to Unix</li>
-    <li>Introduction to Artemis HPC</li>
-    <li>Research Data Storage</li>
-    <li>Automation on Artemis HPC</li>
-    <li>Whole Genome Sequencing Analysis</li>
-  </ul>
-
-  <h2><strong>Skills</strong></h2>
-  <h3>Bioinformatics</h3>
-  <table cellspacing="20">
-    <tr>
-      <td>Genomics</td>
-      <td>Mapping, short and structural variant calling and annotation.<br>
-        Includes germline, somatic variation, common, rare and de novo variation.</td>
-      <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
-    </tr>
-    <tr>
-      <td>Transcriptomics</td>
-      <td>Differential expression, pathway and gene enrichment, de novo <br>
-        assembly, single cell, clustering, normalization methods</td>
-      <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
-    </tr>
-    <tr>
-      <td>Targeted</td>
-      <td>Genome wide association studies, 16S, exome</td>
-      <td>&#11088;&#11088;&#11088;&#11088;</td>
-    </tr>
-    <tr>
-      <td>Metagenomics</td>
-      <td>Assembly, antimicrobial resistance gene identification and<br>
-        abundance estimation, functional profiling</td>
-      <td>&#11088;&#11088;&#11088;&#11088;</td>
-    </tr>
-  </table>
-
-  <h3>Computational Infrastructure and Technologies</h3>
-
-  <table cellspacing="20">
-    <tr>
-      <td>High performance <br> computing</td>
-      <td>PBS, Slurm, AWS Batch</td>
-      <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
-    </tr>
-    <tr>
-      <td>Platforms</td>
-      <td>National and commercial cloud (Pawsey's Nimbus, AARNet's Nectar, AWS) <br>
-        Open on demand, Jupyter notebooks, R/RStudio <br>
-        Galaxy Australia (bioinformatics)</td>
-      <td>&#11088;&#11088;&#11088;&#11088;</td>
-    </tr>
-    <tr>
-      <td>Portablility & <br>reproducibility of code</td>
-      <td>Singularity, Docker, Workflow Managers (Nextflow), Github</td>
-      <td>&#11088;&#11088;&#11088;&#11088;</td>
-    </tr>
-    <tr>
-      <td>Languages</td>
-      <td>Perl, Bash, R, Markdown, HTML</td>
-      <td>&#11088;&#11088;&#11088;&#11088;</td>
-    </tr>
-    <tr>
-      <td>Operating Systems</td>
-      <td>Windows, Mac, Linux</td>
-      <td>&#11088;&#11088;&#11088;&#11088;&#11088;</td>
-    </tr>
-  </table>
-
-  <h2><strong>Qualifications</strong></h2>
-  <table cellspacing="20">
-    <th></th>
-    <tr>
-      <td>Date</td>
-      <td>Qualifications</td>
-    </tr>
-    <tr>
-      <td>2013 - 19 </td>
-      <td>PhD (Bioinformatics, Computational Biology), University of Sydney. <br>“DE NOVO MUTATIONS IN CANINE EVOLUTION AND DISEASE”</td>
-    </tr>
-    <td>2009 - 12</td>
-    <td>Bachelor of Animal and Veterinary Bioscience (Hons 1), University of Sydney</td>
-    <tr>
-
-    </tr>
-  </table>
-
-  <h2><strong>Accomplishments</strong></h2>
-  <ul>
-    <li>
-      Australian Postgraduate Award
-    </li>
-    <li>
-      Neil and Allie Lesue Scholarship
-    </li>
-    <li>
-      Best oral presentation and outstanding abstract: “8th International Conference on
-      Advances in Canine and Feline Genomics and Inherited Diseases”, Cambridge, England
-    </li>
-  </ul>
-  <hr>
-
-  <h2><strong>More about me</strong></h2>
-  Check out my:
-  <ol>
-    <li>
-      <a href="https://www.linkedin.com/in/tracy-chew-734807236/">LinkedIn</a>
-    </li>
-    <li><a href="https://bit.ly/36TmIGa">Google Scholar profile</a></li>
-  </ol>
-
-  <h2>Contact me</h2>
-  <form action="mailto:tracychew.89@gmail.com" method="post" enctype="text/plain">
-    <label>Your Name:</label>
-    <input type="text" name="yourName" value=""><br>
-    <label>Your Email:</label>
-    <input type="email" name="yourEmail" value=""><br>
-    <label>Your Message:</label>
-    <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
-    <!-- removing value="" resulted in Submit text to appear on the button-->
-    <input type="submit" name="">
-
-  </form>
-
-</body>
-
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/tracy-chew-734807236/">LinkedIn</a>
+      <a class="footer-link" href="https://www.instagram.com/itstracecakes/">Instagram</a>
+      <a class="footer-link" href="https://www.sydney.edu.au/research/facilities/sydney-informatics-hub.html">Website</a>
+      <p class="copyright">© Tracy Chew.</p>
+    </div>
+  </body>
 </html>
